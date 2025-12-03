@@ -1,4 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Yuna's Todo Frontend
+
+This folder contains a minimal Next.js App Router scaffold for the Todo UI.
+
+Local setup (run in `front`):
+
+```powershell
+npm install
+npm run dev
+```
+
+Notes:
+
+- I could not run `npx create-next-app` in this environment because PowerShell's script execution policy prevented `npx`.
+- The files here include `app/layout.tsx` (metadata updated), `app/page.js` (the UI you provided), Tailwind/PostCSS config and `app/globals.css`.
+
+If you want me to re-run a full `create-next-app` instead of this manual scaffold, you can either:
+
+- Temporarily allow scripts in PowerShell (run as admin):
+
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser; npx create-next-app@latest . --app --tailwind
+```
+
+- Or run the `npx` command locally on your machine (recommended).
+  This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 

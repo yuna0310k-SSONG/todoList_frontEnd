@@ -1,26 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap");
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Tailwind v4 utilities are imported below. 전역 색상은 Tailwind 유틸로만 처리합니다. */
+/* 필요 시 전역 리셋/폰트 정도만 유지하세요. */
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
